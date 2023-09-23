@@ -16,7 +16,6 @@
 
 Rồi ta xét từng khỏang của đối tượng có số lượng bao nhiêu.
     - Tập ảnh Test (GT) mình sử dụng gồm 76  ảnh, 8 lớp, ảnh được thu bằng UAV trên lưới điện 110Kv.
-    
     - class_name = | 'daydien', 'cachdienslc', 'cachdientt', 'cotthephinh', 'cotdonthan', 'tacr', 'daycs','cachdientt:vobat' |
 
 **Tool vote_detectron2 sẽ gồm 3 bước :**
@@ -29,7 +28,6 @@ Rồi ta xét từng khỏang của đối tượng có số lượng bao nhiêu
 <img src="./images/annotations.jpg">
     - Đánh giá tổng quát trên từng ảnh
 <img src="./images/draw1.jpg">
-
 <img src="./images/draw1.jpg">
 
 * B3 : Đọc file annotations.json vẽ biểu đồ trực quan hóa các giá trị good , no confidence, no detect của từng lớp trên tổng số ảnh đánh giá.
