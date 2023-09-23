@@ -1,9 +1,9 @@
 # Evaluate_Detectron2_Instance_Segmentation
-###  Tool vote_detectron2 được viết ra nhằm mục đích đánh giá độ nhận diện chính xác của từng đối tượng sau khi ảnh được chạy với model detectron2 áp dụng trong bài toán instance segmentation đối tượng mình gán nhãn.
+**Tool vote_detectron2 được viết ra nhằm mục đích đánh giá độ nhận diện chính xác của từng đối tượng sau khi ảnh được chạy với model detectron2 áp dụng trong bài toán instance segmentation đối tượng mình gán nhãn.**
 
-###  Ta có 2 folder chính là :  folder GT (Ground Truth)  chính là folder test chứa các ảnh test và file gán nhãn định dạng Json (gán bằng tool Labelme kiểu polygons) và folder DT (Detection) folder chứa file có thông tin nhận đạng đối tượng trong ảnh GT sau khi cho vào model detect được kết quả viết vào theo kiểu gán nhãn labelme , gán polygons, định dạng file Json.
+**Ta có 2 folder chính là :  folder GT (Ground Truth)  chính là folder test chứa các ảnh test và file gán nhãn định dạng Json (gán bằng tool Labelme kiểu polygons) và folder DT (Detection) folder chứa file có thông tin nhận đạng đối tượng trong ảnh GT sau khi cho vào model detect được kết quả viết vào theo kiểu gán nhãn labelme , gán polygons, định dạng file Json.**
 
-###  Bộ tool sẽ đánh giá từng đối tượng thông qua chỉ IoU = Area of Overlap/ Area of Union, thay vì dùng box để tính bây giờ ta dùng polygon bo đối tượng để tính. Dựa vào giá trị IoU ta sẽ phân làm 3 khoảng là :
+**Bộ tool sẽ đánh giá từng đối tượng thông qua chỉ IoU = Area of Overlap/ Area of Union, thay vì dùng box để tính bây giờ ta dùng polygon bo đối tượng để tính. Dựa vào giá trị IoU ta sẽ phân làm 3 khoảng là :**
 
 **Điều kiện để xếp vào từng trường hợp :**
 * 1, detect Good : IoU > 60 , đối tượng trong DT dc đưa ra so IoU với đối tượng trong GT phải cùng tên
