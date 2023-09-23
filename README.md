@@ -11,8 +11,8 @@
 * 2, detect No confidence : IoU <= 60 , đối tượng trong DT dc đưa ra so IoU với đối tượng trong GT phải cùng tên
 
 * 3, detect No detect : có 2 trường hợp tạo thành
-    3.1 : chỉ số IoU Max == 0
-    3.2 : chỉ số IoU Max > 0 , đối tượng trong DT dc đưa ra so IoU với đối tượng trong GT không cùng tên
+    - 3.1 : chỉ số IoU Max == 0
+    - 3.2 : chỉ số IoU Max > 0 , đối tượng trong DT dc đưa ra so IoU với đối tượng trong GT không cùng tên
 
 Rồi ta xét từng khỏang của đối tượng có số lượng bao nhiêu
 - Tập ảnh Test (GT) mình sử dụng gồm 76  ảnh, 8 lớp, ảnh được thu bằng UAV trên lưới điện 110Kv.
