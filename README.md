@@ -19,21 +19,20 @@ Rồi ta xét từng khỏang của đối tượng có số lượng bao nhiêu
 - class_name = | 'daydien', 'cachdienslc', 'cachdientt', 'cotthephinh', 'cotdonthan', 'tacr', 'daycs','cachdientt:vobat' |
 
 **Tool vote_detectron2 sẽ gồm 3 bước :**
-
-* B1 : Gán nhãn tự động tập ảnh test ghi vào folder DT
+- B1 : Gán nhãn tự động tập ảnh test ghi vào folder DT
 <img src="./images/3.jpg">
 
-* B2 : xác định các đối tượng của ảnh là : good , no confidence hay no detect rồi ghi vào file tổng annotations.json và xuất ra ảnh đánh giá tổng quát về các đối tượng của từng ảnh.
-++ File annotations
+- B2 : xác định các đối tượng của ảnh là : good , no confidence hay no detect rồi ghi vào file tổng annotations.json và xuất ra ảnh đánh giá tổng quát về các đối tượng của từng ảnh.
+ - File annotations
 <img src="./images/annotations.jpg">
-++ Đánh giá tổng quát trên từng ảnh
+ - Đánh giá tổng quát trên từng ảnh
 <img src="./images/draw1.jpg">
 <img src="./images/draw1.jpg">
 
-* B3 : Đọc file annotations.json vẽ biểu đồ trực quan hóa các giá trị good , no confidence, no detect của từng lớp trên tổng số ảnh đánh giá.
-++ Biểu đồ đối tượng phát sinh ( đối tượng không có trong folder GT mà model phát hiện ra)
+- B3 : Đọc file annotations.json vẽ biểu đồ trực quan hóa các giá trị good , no confidence, no detect của từng lớp trên tổng số ảnh đánh giá.
+ - Biểu đồ đối tượng phát sinh ( đối tượng không có trong folder GT mà model phát hiện ra)
 <img src="./images/kq2.png">
-++ Biểu đồ thể hiện các giá good , no confidence, no detect của từng lớp
+ - Biểu đồ thể hiện các giá good , no confidence, no detect của từng lớp
 <img src="./images/kq11.png">
 
 
