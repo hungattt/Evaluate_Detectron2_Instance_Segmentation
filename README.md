@@ -6,11 +6,11 @@
 ###  Bộ tool sẽ đánh giá từng đối tượng thông qua chỉ IoU = Area of Overlap/ Area of Union, thay vì dùng box để tính bây giờ ta dùng polygon bo đối tượng để tính. Dựa vào giá trị IoU ta sẽ phân làm 3 khoảng là :
 
 **Điều kiện để xếp vào từng trường hợp :**
-  * 1, detect Good : IoU > 60 , đối tượng trong DT dc đưa ra so IoU với đối tượng trong GT phải cùng tên
+* 1, detect Good : IoU > 60 , đối tượng trong DT dc đưa ra so IoU với đối tượng trong GT phải cùng tên
 
-  * 2, detect No confidence : IoU <= 60 , đối tượng trong DT dc đưa ra so IoU với đối tượng trong GT phải cùng tên
+* 2, detect No confidence : IoU <= 60 , đối tượng trong DT dc đưa ra so IoU với đối tượng trong GT phải cùng tên
 
-  * 3, detect No detect : có 2 trường hợp tạo thành
+* 3, detect No detect : có 2 trường hợp tạo thành
     3.1 : chỉ số IoU Max == 0
     3.2 : chỉ số IoU Max > 0 , đối tượng trong DT dc đưa ra so IoU với đối tượng trong GT không cùng tên
 
