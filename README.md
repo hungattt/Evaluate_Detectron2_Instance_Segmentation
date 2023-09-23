@@ -15,29 +15,30 @@
     3.2 : chỉ số IoU Max > 0 , đối tượng trong DT dc đưa ra so IoU với đối tượng trong GT không cùng tên
 
 Rồi ta xét từng khỏang của đối tượng có số lượng bao nhiêu
-Tập ảnh Test (GT) mình sử dụng gồm 76  ảnh, 8 lớp, ảnh được thu bằng UAV trên lưới điện 110Kv
-class_name = | 'daydien', 'cachdienslc', 'cachdientt', 'cotthephinh', 'cotdonthan', 'tacr', 'daycs','cachdientt:vobat' |
+- Tập ảnh Test (GT) mình sử dụng gồm 76  ảnh, 8 lớp, ảnh được thu bằng UAV trên lưới điện 110Kv.
+
+- class_name = | 'daydien', 'cachdienslc', 'cachdientt', 'cotthephinh', 'cotdonthan', 'tacr', 'daycs','cachdientt:vobat' |
 
 **Tool vote_detectron2 sẽ gồm 3 bước :**
 
 * B1 : Gán nhãn tự động tập ảnh test ghi vào folder DT
-  <img src="3.jpg">
+  <img src="./images/3.jpg">
 
 * B2 : xác định các đối tượng của ảnh là : good , no confidence hay no detect rồi ghi vào file tổng annotations.json và xuất ra ảnh đánh giá tổng quát về các đối tượng của từng ảnh.
 -	File annotations
-  <img src="annotations.jpg">
+  <img src="./images/annotations.jpg">
 
 -	Đánh giá tổng quát trên từng ảnh
   *
- 	<img src="draw1.jpg">
+ 	<img src="./images/draw1.jpg">
   *
-  <img src="draw1.jpg">
+  <img src="./images/draw1.jpg">
 
 * B3 : Đọc file annotations.json vẽ biểu đồ trực quan hóa các giá trị good , no confidence, no detect của từng lớp trên tổng số ảnh đánh giá.
 -	Biểu đồ đối tượng phát sinh ( đối tượng không có trong folder GT mà model phát hiện ra)
-<img src="kq2.png">
+<img src="./images/kq2.png">
 -	Biểu đồ thể hiện các giá good , no confidence, no detect của từng lớp
-<img src="kq11.png">
+<img src="./images/kq11.png">
 
 
 
